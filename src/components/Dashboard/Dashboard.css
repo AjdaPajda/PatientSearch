@@ -1,0 +1,138 @@
+.dashboard-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  background-color: aliceblue;
+}
+
+.sidebar {
+  border: 2px solid white;
+  height: 100%;
+  width: 15%;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
+.header-container {
+  margin-bottom: 20px;
+  width: 1400px;
+  height: 110px;
+  background-color: white;
+}
+
+.table-container {
+  padding: 30px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 2px solid blue;
+  border-radius: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.table th {
+  background-color: #f2f2f2;
+}
+
+.button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+@media (max-width: 1200px) {
+  .header-container {
+    width: 100%; 
+    margin-top: 10px; 
+  }
+
+  .sidebar {
+    width: 150px; 
+  }
+
+  .main-content {
+    padding: 10px; 
+  }
+
+  .table-container {
+    margin-right: 30px; 
+  }
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%; 
+    margin-bottom: 20px; 
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .table-container {
+    width: 100%;
+    margin: 0; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header-container {
+    flex-direction: column; 
+    align-items: center;
+    padding: 10px;
+  }
+
+  .left-content, .right-content {
+    align-items: center;
+  }
+
+  .profile {
+    margin-top: 10px;
+  }
+
+  .sidebar {
+    width: 100%;
+    border: none; 
+    margin-bottom: 10px; 
+  }
+
+  .main-content {
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .table-container {
+    width: 100%;
+    margin: 0; 
+  }
+}

@@ -1,0 +1,59 @@
+:root {
+    --ms-bg-white: #FFFFFF;
+    --ms-bg-gray: #F4F6FA;
+    --ms-bg-blue: #003769;
+    --ms-bg-yellow: #FFA000;
+    --ms-scale: 1.15;
+}
+
+body {
+    margin: 0!important;
+    font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+    font-size: calc(2rem * var(--ms-scale));
+    font-weight: 500;
+    line-height: calc(2.2rem * var(--ms-scale));
+    margin: 0;
+}
+
+.color-white {
+    color: var(--ms-bg-white)
+}
+
+/* Large desktops and laptops */
+@media screen and (max-width: 1200px) {
+    :root {
+        --ms-scale: 1.10;
+    }
+}
+
+/* Tablets and small desktops */
+@media screen and (max-width: 992px) {
+    :root {
+        --ms-scale: 1.05;
+    }
+}
+
+/* Tablets in portrait mode */
+@media screen and (max-width: 768px) {
+    :root {
+        --ms-scale: 1.00;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 576px) {
+    :root {
+        --ms-scale: 0.95;
+    }
+}
+
+/* Smaller mobile devices */
+@media screen and (max-width: 400px) {
+    :root {
+        --ms-scale: 0.90;
+    }
+}
+  
